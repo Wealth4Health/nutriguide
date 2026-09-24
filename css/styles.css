@@ -36,9 +36,13 @@
 .team-card-copy{padding:19px 20px 22px}
 .team-card h3{font-family:Georgia,serif;font-size:1.32rem;font-weight:500;line-height:1.2;margin:0 0 7px}
 .team-card p{color:var(--muted);font-size:.92rem;margin:0}
+.team-bio{max-width:900px;margin:34px auto 0;padding:30px 34px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 28px rgba(35,70,52,.05)}
+.team-bio h3{font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2rem);font-weight:500;line-height:1.2;margin:0 0 16px}
+.team-bio p{color:#435048;margin:0 0 16px}
+.team-bio p:last-child{margin-bottom:0}
 .about-disclaimer{padding:54px 0;background:var(--mint);border-top:1px solid var(--line)}
 .about-disclaimer h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:500;margin:0 0 10px}
 .about-disclaimer p{max-width:800px;margin:0;color:#435048}
 :where(a,button,summary):focus-visible{outline:3px solid var(--green);outline-offset:3px}
 @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.about-hero{padding:58px 0 54px}.about-hero p{font-size:1.05rem}.about-team{padding:54px 0}.team-grid{grid-template-columns:1fr}.team-card{max-width:440px}}
+@media(max-width:560px){.about-hero{padding:58px 0 54px}.about-hero p{font-size:1.05rem}.about-team{padding:54px 0}.team-grid{grid-template-columns:1fr}.team-card{max-width:440px}.team-bio{margin-top:24px;padding:24px 20px}}
